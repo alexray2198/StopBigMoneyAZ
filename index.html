@@ -5,122 +5,116 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Stop Big Money AZ</title>
-  <style>
-    body {
-      margin: 0;
-      padding-bottom: 1rem;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #111;
-    }
+<style>
+  body {
+    margin: 0;
+    padding-bottom: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #111;
+  }
 
-    header {
-      background-color: #002868;
-      color: #fff;
-      position: fixed;
-      padding: 1rem 50px;
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
+  header {
+    background-color: #002868;
+    color: #fff;
+    position: fixed;
+    padding: 1rem 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    header h1 {
-      font-size: 2.8rem;
-      margin: 0;
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
+  .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
 
-    nav {
-      padding: 0 40px;
-    }
+  .site-logo {
+    height: 50px;
+    width: auto;
+    display: block;
+  }
 
-    nav a {
-      color: white;
-      margin-left: 1.5rem;
-      text-decoration: none;
-      font-weight: bold;
-      text-transform: uppercase;
-      display: flex;
-      flex-wrap: wrap;
-    }
+  header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+  nav {
+    padding: 0 40px;
+  }
 
-    main {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
+  nav a {
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    section {
-      margin-bottom: 4rem;
-    }
+  nav a:hover {
+    text-decoration: underline;
+  }
 
-    h2 {
-      border-left: 6px solid #bf0a30;
-      padding-left: 0.75rem;
-      color: #222;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      text-transform: uppercase;
-    }
+  main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
 
-    .endorsement-list {
-      columns: 2;
-      column-gap: 2rem;
-    }
+  section {
+    margin-bottom: 4rem;
+  }
 
-    .endorsement-list p {
-      margin: 0.3rem 0;
-    }
+  h2 {
+    border-left: 6px solid #bf0a30;
+    padding-left: 0.75rem;
+    color: #222;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
 
-    a.button {
-      display: inline-block;
-      margin-top: 1rem;
-      background-color: #bf0a30;
-      color: #fed700;
-      padding: 0.7rem 1.2rem;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+  .endorsement-list {
+    columns: 2;
+    column-gap: 2rem;
+  }
 
-    a.button:hover {
-      background-color: #b12236;
-    }
+  .endorsement-list p {
+    margin: 0.3rem 0;
+  }
 
-    @media (max-width: 768px) {
-      .endorsement-list {
-        columns: 1;
-      }
+  a.button {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #bf0a30;
+    color: #fed700;
+    padding: 0.7rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-      nav {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: flex-end;
-      }
+  a.button:hover {
+    background-color: #b12236;
+  }
 
-      nav a {
-        margin: 0 0;
-        white-space: normal;
-        flex: 1 1 auto;
-      }
-    }
-    .floating-button {
+  .floating-button {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #b12236; /* Working Families Party red */
+    background-color: #b12236;
     color: white;
     padding: 16px 20px;
     font-size: 18px;
@@ -133,25 +127,45 @@
     box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
   }
-  
+
   .floating-button:hover {
     background-color: #a50000;
   }
 
-  </style>
+  @media (max-width: 768px) {
+    .endorsement-list {
+      columns: 1;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    nav a {
+      margin: 0 0;
+      white-space: normal;
+      flex: 1 1 auto;
+    }
+
+    .site-logo {
+      height: 40px;
+    }
+  }
+</style>
 </head>
 <body>
 
 <header class="floating-header" id="floatingHeader">
-  <h1>Stop Big Money AZ</h1>
+  <div class="logo-title">
+    <img src="Superpacbanlogo(sphere)-9.png" alt="Stop Big Money AZ Logo" class="site-logo" />
+    <h1>Stop Big Money AZ</h1>
+  </div>
   <nav>
-    <a href="#home" class="nav-link">Home     </a>
-    <a href="#why" class="nav-link">Why This Matters</a>
-    <a href="#resolution" class="nav-link">Our Resolution</a>
-    <a href="#endorsements" class="nav-link">Endorsements</a>
-    <a href="#about-us" class="nav-link">About Us      </a>
+    ...
   </nav>
-
 </header>
 
 <main class="main-content">
